@@ -19,7 +19,7 @@ module.exports = {
     rules: [{
       test: /\.ts(x?)$/,
       loader: 'ts-loader',
-      exlude: /node_modules/
+      exclude: /node_modules/
     }, {
       test: /\.scss$/,
       use: [{
@@ -35,8 +35,12 @@ module.exports = {
     }]
   },
   devServer: {
-    contentBase: './public',
-    writeToDisk: true,
+    devMiddleware: {
+      writeToDisk: true
+    },
+    static: {
+      directory: './public'
+    },
     historyApiFallback: true
   },
   externals: {
