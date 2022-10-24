@@ -1,6 +1,6 @@
 import React from 'react'
 import Spinner from '@/presentation/components/spinner/spinner'
-import Styles from './input-styles.scss'
+import Styles from './form-status-styles.scss'
 
 const FormStatus: React.FC = () => {
   return (
