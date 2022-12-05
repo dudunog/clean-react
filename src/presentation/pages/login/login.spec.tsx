@@ -175,6 +175,7 @@ describe('Login Component ', () => {
     await waitFor(() => {
       expect(localStorage.setItem).toHaveBeenCalledWith('accessToken',
         authenticationSpy.account.accessToken)
+      expect(history.location.pathname).toBe('/')
     })
   })
 
