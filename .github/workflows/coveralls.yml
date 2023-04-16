@@ -24,7 +24,7 @@ jobs:
         run: npx eslint 'src/**'
 
       - name: Run the tests and generate coveralls
-        run: npm run test:coveralls
+        run: npm run test:ci
 
       - name: Coveralls
         uses: coverallsapp/github-action@v2
