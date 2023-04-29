@@ -9,7 +9,7 @@ import { type SaveAccessToken, type AddAccount } from '@/domain/usecases'
 type Props = {
   validation?: Validation
   addAccount?: AddAccount
-  saveAccessToken?: SaveAccessToken
+  saveAccessToken: SaveAccessToken
 }
 
 const Signup: React.FC<Props> = ({ validation, addAccount, saveAccessToken }: Props) => {
